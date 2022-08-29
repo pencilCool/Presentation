@@ -1,5 +1,4 @@
 import UIKit
-import Pages
 
 @objc public protocol PresentationControllerDelegate {
   func presentationController(
@@ -99,7 +98,7 @@ open class PresentationController: PagesController {
           selector: #selector(self.updateAnimationTimer(_:)),
           userInfo: nil,
           repeats: false)
-        RunLoop.current.add(self.animationTimer!, forMode: RunLoop.Mode.common)
+          RunLoop.current.add(self.animationTimer!, forMode: .commonModes)
       }
     }
   }
@@ -127,7 +126,7 @@ open class PresentationController: PagesController {
     for content in elements {
       backgroundContents.append(content)
       view.addSubview(content.view)
-      view.sendSubviewToBack(content.view)
+      view.sendSubview(toBack: content.view)
       content.layout()
     }
   }

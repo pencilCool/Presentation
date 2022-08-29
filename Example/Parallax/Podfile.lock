@@ -1,22 +1,23 @@
 PODS:
   - Hue (3.0.1)
-  - Pages (2.0.2)
-  - Presentation (4.1.0):
-    - Pages (~> 2.0)
+  - Presentation (4.1.3)
 
 DEPENDENCIES:
   - Hue
   - Presentation (from `../../`)
 
+SPEC REPOS:
+  trunk:
+    - Hue
+
 EXTERNAL SOURCES:
   Presentation:
-    :path: ../../
+    :path: "../../"
 
 SPEC CHECKSUMS:
   Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
-  Pages: 5564ac6035c48fef7a837049314f57507d263b11
-  Presentation: b717a7e0bff6af8e028998269114a344d5c114e4
+  Presentation: 9c9009b061255db9c448dec8954ef2129c2eb4ff
 
 PODFILE CHECKSUM: 979718cbe7e3509ed288250a31b6c6036f4f9943
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.11.2
